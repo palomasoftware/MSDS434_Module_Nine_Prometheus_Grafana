@@ -1,0 +1,9 @@
+sudo apt update
+sudo snap install docker
+sudo docker pull prom/prometheus
+docker network create network
+docker volume create prometheus-data
+
+
+
+sudo docker container run --name prometheus --network monitoring -v prometheus.yml -v prometheus-data:/prometheus -p 9090:9090  prom/prometheus
