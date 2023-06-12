@@ -13,6 +13,10 @@ admin
 
 < rename as needed > 
 
+select data source <dns>:9090
+select metric: e.g.  go_memstats_alloc_bytes_total
+'run queries'
+
 
 
 
